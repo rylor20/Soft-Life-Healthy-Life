@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Healthy and Unhealthy Lifestyle</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===================== DARK MODE TOGGLE ===================== -->
+    <!-- CSS-only theme switch -->
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+
+    <!-- ===================== NAVIGATION BAR ===================== -->
+    <header class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LEFT SIDE: Grade 12 Project + Logo -->
+            <div class="navbar-left">
+
+                <!-- Project Name -->
+                <span class="navbar-brand">
+                    Grade 12 Project
+                </span>
+
+                <!-- Logo underneath Grade 12 Project -->
+                <img
+                    src="logo.png"
+                    alt="Project Logo"
+                    class="navbar-logo"
+                >
+
+            </div>
+
+
+            <!-- NAVIGATION LINKS -->
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#video">Video</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <!-- RIGHT SIDE: THEME TOGGLE -->
+            <div class="navbar-right">
+
+                <label for="theme-toggle" class="theme-label">
+
+                    <!-- Light Mode -->
+                    <span class="icon-light">
+                        ☀️ Light
+                    </span>
+
+                    <!-- Dark Mode -->
+                    <span class="icon-dark">
+                        🌙 Dark
+                    </span>
+
+                </label>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero">
+
+        <div class="hero-inner">
+
+            <h1 class="hero-title">
+                Soft Life Healthy Life
+            </h1>
+
+            <p class="hero-subtitle">
+                A Grade 12 Healthy Life Project
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <main>
+
+        <!-- ===================== ABOUT SECTION ===================== -->
+        <section id="about" class="about-section">
+
+            <div class="section-container">
+
+                <h2 class="section-title">
+                    About Us
+                </h2>
+
+                <p class="section-description">
+                    Meet the students behind this project.
+                </p>
+
+
+                <!-- ===================== STUDENT CARDS ===================== -->
+                <div class="student-grid">
+
+
+                    <!-- STUDENT 1 -->
+                    <article class="student-card">
+
+                        <img
+                            src="MJ.png"
+                            alt="Photo of MJ Estrella"
+                            class="student-image"
+                        >
+
+                        <div class="student-info">
+
+                            <h3 class="student-name">
+                                MJ Estrella
+                            </h3>
+
+                            <span class="student-role">
+                                Researcher
+                            </span>
+
+                            <p class="student-age">
+                                Age: 18
+                            </p>
+
+                            <p class="student-desc">
+                                MJ helped research the information used in the project.
+                                She gathered facts about healthy and unhealthy lifestyles
+                                from reliable sources.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- STUDENT 2 -->
+                    <article class="student-card">
+
+                        <img
+                            src="Lorain.jpg"
+                            alt="Photo of Lorain Avellanosa"
+                            class="student-image"
+                        >
+
+                        <div class="student-info">
+
+                            <h3 class="student-name">
+                                Lorain Avellanosa
+                            </h3>
+
+                            <span class="student-role">
+                                Designer
+                            </span>
+
+                            <p class="student-age">
+                                Age: 18
+                            </p>
+
+                            <p class="student-desc">
+                                Lorain helped design and organize the website layout.
+                                She made sure everything looked clean and easy to navigate.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- STUDENT 3 -->
+                    <article class="student-card">
+
+                        <img
+                            src="Lyca.png"
+                            alt="Photo of Lyca Parsan"
+                            class="student-image"
+                        >
+
+                        <div class="student-info">
+
+                            <h3 class="student-name">
+                                Lyca Parsan
+                            </h3>
+
+                            <span class="student-role">
+                                Video Editor
+                            </span>
+
+                            <p class="student-age">
+                                Age: 18
+                            </p>
+
+                            <p class="student-desc">
+                                Lyca helped prepare and edit the videos for the project.
+                                She made sure both videos were clear and informative.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================== VIDEO SECTION ===================== -->
+        <section id="video" class="video-section">
+
+            <div class="section-container">
+
+                <h2 class="section-title">
+                    Our Videos
+                </h2>
+
+                <p class="section-description">
+                    Watch our short videos on healthy and unhealthy lifestyles.
+                </p>
+
+
+                <!-- ===================== VIDEO CARDS ===================== -->
+                <div class="video-grid">
+
+
+                    <!-- HEALTHY VIDEO -->
+                    <div class="video-card">
+
+                        <video
+                            class="video-player"
+                            controls
+                        >
+
+                            <source
+                                src="videos/healthy.mp4"
+                                type="video/mp4"
+                            >
+
+                            Your browser does not support the video tag.
+
+                        </video>
+
+
+                        <div class="video-info">
+
+                            <h3 class="video-title">
+                                Healthy
+                            </h3>
+
+                            <p class="video-desc">
+                                This video discusses the benefits of a healthy lifestyle,
+                                including proper nutrition, regular exercise, and good sleep habits.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- UNHEALTHY VIDEO -->
+                    <div class="video-card">
+
+                        <video
+                            class="video-player"
+                            controls
+                        >
+
+                            <source
+                                src="videos/unhealthy.mp4"
+                                type="video/mp4"
+                            >
+
+                            Your browser does not support the video tag.
+
+                        </video>
+
+
+                        <div class="video-info">
+
+                            <h3 class="video-title">
+                                Unhealthy
+                            </h3>
+
+                            <p class="video-desc">
+                                This video shows the effects of an unhealthy lifestyle,
+                                such as poor diet, lack of exercise, and bad habits that
+                                affect our overall health.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+
+        <p>
+            Grade 12 Healthy Life Project
+            &mdash;
+            Healthy and Unhealthy Lifestyle
+        </p>
+
+        <p class="footer-small">
+            All rights reserved &copy; 2026
+        </p>
+
+    </footer>
+
+</body>
+</html>

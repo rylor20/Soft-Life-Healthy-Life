@@ -1,0 +1,666 @@
+/* =========================================================
+   GENERAL STYLES
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8f4;
+    color: #174d2c;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   DARK MODE CHECKBOX
+   ========================================================= */
+
+.theme-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   NAVIGATION BAR
+   ========================================================= */
+
+.navbar {
+    width: 100%;
+    background: #1d5c35;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-inner {
+    max-width: 1060px;
+    min-height: 82px;
+    margin: 0 auto;
+    padding: 8px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+/* =========================================================
+   LEFT SIDE: PROJECT NAME + LOGO
+   ========================================================= */
+
+.navbar-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+
+/* Grade 12 Project */
+.navbar-brand {
+    color: #c8e6cf;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    max-width: 100px;
+}
+
+
+/* Logo underneath Grade 12 Project */
+.navbar-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+   ========================================================= */
+
+nav {
+    margin-left: auto;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.nav-links a {
+    color: #d9eddd;
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   DARK / LIGHT MODE BUTTON
+   ========================================================= */
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.theme-label {
+    cursor: pointer;
+    color: #d9eddd;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    padding: 8px 12px;
+    border-radius: 20px;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.theme-label:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+
+/* Light icon is hidden in Light Mode */
+.icon-light {
+    display: none;
+}
+
+
+/* Dark icon is shown in Light Mode */
+.icon-dark {
+    display: inline;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero {
+    min-height: 310px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1d5c35,
+            #37864e
+        );
+
+    padding: 70px 20px;
+}
+
+.hero-inner {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    color: #d8ebdc;
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+   ========================================================= */
+
+.section-container {
+    width: min(1060px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.about-section,
+.video-section {
+    padding: 75px 0;
+}
+
+.section-title {
+    text-align: center;
+    color: #15552d;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.section-description {
+    text-align: center;
+    color: #4d6b57;
+    margin-bottom: 42px;
+}
+
+
+/* =========================================================
+   STUDENT CARDS
+   ========================================================= */
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.student-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 24px rgba(24, 72, 38, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.3s ease;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(24, 72, 38, 0.17);
+}
+
+
+/* Student Image */
+.student-image {
+    width: 100%;
+    height: 245px;
+
+    display: block;
+
+    object-fit: cover;
+    background: #c8e5cc;
+}
+
+
+/* Student Information */
+.student-info {
+    padding: 24px;
+}
+
+.student-name {
+    color: #14552c;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.student-role {
+    display: inline-block;
+
+    padding: 4px 11px;
+
+    border-radius: 20px;
+
+    background: #e5f4e8;
+    color: #176335;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.student-age {
+    color: #42654c;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.student-desc {
+    color: #51695a;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   VIDEO SECTION
+   ========================================================= */
+
+.video-section {
+    background: #edf5ee;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.video-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 24px rgba(24, 72, 38, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(24, 72, 38, 0.17);
+}
+
+
+/* Actual playable video */
+.video-player {
+    width: 100%;
+    height: 310px;
+
+    display: block;
+
+    background: #111;
+}
+
+
+/* Video information */
+.video-info {
+    padding: 24px;
+}
+
+.video-title {
+    color: #15552d;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.video-desc {
+    color: #51695a;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    background: #16492b;
+    color: #d8ebdc;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer-small {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+/*
+   When the checkbox is checked, all elements after it
+   can be changed using CSS.
+*/
+
+#theme-toggle:checked ~ .navbar {
+    background: #101c14;
+}
+
+#theme-toggle:checked ~ .navbar .navbar-brand {
+    color: #d8eadc;
+}
+
+#theme-toggle:checked ~ .navbar .nav-links a {
+    color: #d8eadc;
+}
+
+#theme-toggle:checked ~ .navbar .nav-links a:hover {
+    color: #ffffff;
+}
+
+#theme-toggle:checked ~ .navbar .theme-label {
+    color: #e8f4eb;
+}
+
+#theme-toggle:checked ~ .navbar .icon-light {
+    display: inline;
+}
+
+#theme-toggle:checked ~ .navbar .icon-dark {
+    display: none;
+}
+
+
+/* Dark body */
+#theme-toggle:checked ~ main {
+    background: #111a14;
+}
+
+#theme-toggle:checked ~ main .about-section {
+    background: #111a14;
+}
+
+#theme-toggle:checked ~ main .video-section {
+    background: #17241a;
+}
+
+
+/* Dark section titles */
+#theme-toggle:checked ~ main .section-title {
+    color: #b9dfc1;
+}
+
+#theme-toggle:checked ~ main .section-description {
+    color: #a5bbaa;
+}
+
+
+/* Dark student cards */
+#theme-toggle:checked ~ main .student-card {
+    background: #1b2a1f;
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+#theme-toggle:checked ~ main .student-name {
+    color: #c8e6ce;
+}
+
+#theme-toggle:checked ~ main .student-role {
+    background: #294734;
+    color: #bde0c4;
+}
+
+#theme-toggle:checked ~ main .student-age {
+    color: #a9bcae;
+}
+
+#theme-toggle:checked ~ main .student-desc {
+    color: #aebdb2;
+}
+
+
+/* Dark video cards */
+#theme-toggle:checked ~ main .video-card {
+    background: #1b2a1f;
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+#theme-toggle:checked ~ main .video-title {
+    color: #c8e6ce;
+}
+
+#theme-toggle:checked ~ main .video-desc {
+    color: #aebdb2;
+}
+
+
+/* Dark footer */
+#theme-toggle:checked ~ .footer {
+    background: #0c140f;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN — TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .navbar-inner {
+        gap: 18px;
+    }
+
+    .nav-links {
+        gap: 22px;
+    }
+
+    .student-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .student-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .navbar-inner {
+        min-height: 90px;
+        padding: 8px 14px;
+
+        gap: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 0.85rem;
+        max-width: 85px;
+    }
+
+    .navbar-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+
+    .theme-label {
+        padding: 6px 8px;
+        font-size: 0.72rem;
+    }
+
+    .hero {
+        min-height: 260px;
+        padding: 55px 20px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .section-container {
+        width: min(100% - 28px, 1060px);
+    }
+
+    .about-section,
+    .video-section {
+        padding: 55px 0;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .student-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .student-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-player {
+        height: 230px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .navbar-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-left {
+        margin-right: auto;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-links {
+        justify-content: center;
+        padding-bottom: 5px;
+    }
+
+    .navbar-right {
+        margin-left: auto;
+    }
+
+    .hero-title {
+        font-size: 1.9rem;
+    }
+}
