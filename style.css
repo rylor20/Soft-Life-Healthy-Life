@@ -1,7 +1,3 @@
-/* =========================================================
-   GENERAL STYLES
-   ========================================================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -25,20 +21,12 @@ a {
 }
 
 
-/* =========================================================
-   DARK MODE CHECKBOX
-   ========================================================= */
-
 .theme-checkbox {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
 
-
-/* =========================================================
-   NAVIGATION BAR
-   ========================================================= */
 
 .navbar {
     width: 100%;
@@ -62,10 +50,6 @@ a {
 }
 
 
-/* =========================================================
-   LEFT SIDE: PROJECT NAME + LOGO
-   ========================================================= */
-
 .navbar-left {
     display: flex;
     flex-direction: column;
@@ -76,7 +60,6 @@ a {
 }
 
 
-/* Grade 12 Project */
 .navbar-brand {
     color: #c8e6cf;
     font-size: 1rem;
@@ -87,7 +70,6 @@ a {
 }
 
 
-/* Logo underneath Grade 12 Project */
 .navbar-logo {
     width: 48px;
     height: 48px;
@@ -95,10 +77,6 @@ a {
     display: block;
 }
 
-
-/* =========================================================
-   NAVIGATION LINKS
-   ========================================================= */
 
 nav {
     margin-left: auto;
@@ -128,10 +106,6 @@ nav {
 }
 
 
-/* =========================================================
-   DARK / LIGHT MODE BUTTON
-   ========================================================= */
-
 .navbar-right {
     display: flex;
     align-items: center;
@@ -158,21 +132,15 @@ nav {
 }
 
 
-/* Light icon is hidden in Light Mode */
 .icon-light {
     display: none;
 }
 
 
-/* Dark icon is shown in Light Mode */
 .icon-dark {
     display: inline;
 }
 
-
-/* =========================================================
-   HERO SECTION
-   ========================================================= */
 
 .hero {
     min-height: 310px;
@@ -211,9 +179,6 @@ nav {
 }
 
 
-/* =========================================================
-   GENERAL SECTION
-   ========================================================= */
 
 .section-container {
     width: min(1060px, calc(100% - 40px));
@@ -239,9 +204,6 @@ nav {
 }
 
 
-/* =========================================================
-   STUDENT CARDS
-   ========================================================= */
 
 .student-grid {
     display: grid;
@@ -271,7 +233,6 @@ nav {
 }
 
 
-/* Student Image */
 .student-image {
     width: 100%;
     height: 245px;
@@ -283,7 +244,6 @@ nav {
 }
 
 
-/* Student Information */
 .student-info {
     padding: 24px;
 }
@@ -322,9 +282,6 @@ nav {
 }
 
 
-/* =========================================================
-   VIDEO SECTION
-   ========================================================= */
 
 .video-section {
     background: #edf5ee;
@@ -358,7 +315,6 @@ nav {
 }
 
 
-/* Actual playable video */
 .video-player {
     width: 100%;
     height: 310px;
@@ -369,7 +325,7 @@ nav {
 }
 
 
-/* Video information */
+
 .video-info {
     padding: 24px;
 }
@@ -385,10 +341,6 @@ nav {
     font-size: 0.9rem;
 }
 
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
 
 .footer {
     background: #16492b;
@@ -408,15 +360,6 @@ nav {
     opacity: 0.8;
 }
 
-
-/* =========================================================
-   DARK MODE
-   ========================================================= */
-
-/*
-   When the checkbox is checked, all elements after it
-   can be changed using CSS.
-*/
 
 #theme-toggle:checked ~ .navbar {
     background: #101c14;
@@ -447,7 +390,6 @@ nav {
 }
 
 
-/* Dark body */
 #theme-toggle:checked ~ main {
     background: #111a14;
 }
@@ -461,7 +403,6 @@ nav {
 }
 
 
-/* Dark section titles */
 #theme-toggle:checked ~ main .section-title {
     color: #b9dfc1;
 }
@@ -471,7 +412,6 @@ nav {
 }
 
 
-/* Dark student cards */
 #theme-toggle:checked ~ main .student-card {
     background: #1b2a1f;
     box-shadow:
@@ -496,7 +436,6 @@ nav {
 }
 
 
-/* Dark video cards */
 #theme-toggle:checked ~ main .video-card {
     background: #1b2a1f;
     box-shadow:
@@ -512,15 +451,10 @@ nav {
 }
 
 
-/* Dark footer */
 #theme-toggle:checked ~ .footer {
     background: #0c140f;
 }
 
-
-/* =========================================================
-   RESPONSIVE DESIGN — TABLET
-   ========================================================= */
 
 @media (max-width: 850px) {
 
@@ -549,9 +483,6 @@ nav {
 }
 
 
-/* =========================================================
-   RESPONSIVE DESIGN — MOBILE
-   ========================================================= */
 
 @media (max-width: 600px) {
 
@@ -630,9 +561,6 @@ nav {
 }
 
 
-/* =========================================================
-   EXTRA SMALL MOBILE
-   ========================================================= */
 
 @media (max-width: 420px) {
 
